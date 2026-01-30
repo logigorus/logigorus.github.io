@@ -11,7 +11,8 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #fff;
+            background: linear-gradient(135deg, #fff9f5 0%, #fff 40%, #f8f6f4 100%);
+            min-height: 100vh;
         }
 
         .container {
@@ -22,6 +23,21 @@
 
         header {
             margin-bottom: 48px;
+            display: flex;
+            align-items: flex-start;
+            gap: 28px;
+        }
+
+        .profile-photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 8px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .header-text {
+            flex: 1;
         }
 
         h1 {
@@ -126,14 +142,26 @@
         @media (max-width: 480px) {
             .container { padding: 40px 20px; }
             h1 { font-size: 1.8rem; }
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Igor Logvinenko</h1>
-            <p class="subtitle">Associate Professor of Diplomacy and World Affairs<br>Faculty Director, Undergraduate Research Center<br>Occidental College</p>
+            <img src="hatchingphotoigor.png" alt="Igor Logvinenko" class="profile-photo">
+            <div class="header-text">
+                <h1>Igor Logvinenko</h1>
+                <p class="subtitle">Associate Professor of Diplomacy and World Affairs<br>Faculty Director, Undergraduate Research Center<br>Occidental College</p>
+            </div>
         </header>
 
         <section>
