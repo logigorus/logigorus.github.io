@@ -52,6 +52,29 @@
             color: #63666A;
         }
 
+        .role-block {
+            margin-bottom: 10px;
+        }
+
+        .role-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .role-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .role-detail {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-style: italic;
+            font-size: 0.9rem;
+            letter-spacing: 0.01em;
+            color: #63666A;
+            margin-top: 1px;
+        }
+
         section {
             margin-bottom: 40px;
         }
@@ -160,7 +183,14 @@
             <img src="hatchingphotoigor.png" alt="Igor Logvinenko" class="profile-photo">
             <div class="header-text">
                 <h1>Igor Logvinenko</h1>
-                <p class="subtitle">Associate Professor of Diplomacy and World Affairs<br>Faculty Director, Undergraduate Research Center<br>Incoming Faculty Director, John Parke Young Initiative on the Global Political Economy<br>Occidental College</p>
+                <div class="role-block">
+                    <p class="role-title">Associate Professor</p>
+                    <p class="role-detail">Diplomacy and World Affairs, Occidental College</p>
+                </div>
+                <div class="role-block">
+                    <p class="role-title">Faculty Director</p>
+                    <p class="role-detail">John Parke Young Initiative on the Global Political Economy</p>
+                </div>
             </div>
         </header>
 
